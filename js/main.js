@@ -19,16 +19,16 @@ $(document).ready(function() {
 
     let altoBanner = function() {
         let alto = banner.padre.children('.slide').outerHeight();
-        banner.padre.css({
+        banner.padre.animate({
             'height': alto + 'px'
         });
+        console.log('altoBanner ', alto);
     }
     let altoInfo = function() {
         let alto = info.padre.children('.active').outerHeight();
         info.padre.animate({
             'height': alto + 'px'
         });
-        console.log('alto ', alto);
     }
     let altoContenedor = function() {
         let altoVentana = $(window).height();

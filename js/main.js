@@ -22,7 +22,6 @@ $(document).ready(function() {
         banner.padre.animate({
             'height': alto + 'px'
         });
-        console.log('altoBanner ', alto);
     }
     let altoInfo = function() {
         let alto = info.padre.children('.active').outerHeight();

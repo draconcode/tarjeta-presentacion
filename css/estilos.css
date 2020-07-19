@@ -14,11 +14,9 @@ body {
     background-attachment: fixed;
     font-family: 'Red Rose', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
-
 a {
     text-decoration: none;
 }
-
 .contenedor {
     width: 90%;
     max-width: 700px;

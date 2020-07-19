@@ -135,21 +135,43 @@ a {
     color: #8d8d8d;
     font-size: 14px;
     line-height: 14px;
+    margin-bottom: 16px;
 }
 .slider_info .informacion .pais img {
     position: relative;
     top: 2px;
     margin-right: 10px;
 }
+.slider_info .informacion .cv {
+    font-size: 14px;
+    line-height: 14px;
+    border: 1px solid #293e6a;
+    padding: 5px 15px;
+    color: #293e6a;
+    border-radius: 5px;
+    height: 100%;
+    transition: 500ms all ease-in;
+    scale: 1.5;
+}
+.slider_info .informacion .cv:hover {
+    background-image: linear-gradient(to right top, #293e6a, #2d4575, #324b81, #36528c, #3b5998);
+    padding: 5px 15px;
+    color: #f2f2f2;
+    border-radius: 5px;
+    scale: 1.5;
+    padding: 7.5px 20px;
+    box-shadow: 1px 3px 4px rgba(0,0,0,.5);
+}
 .slider_info .informacion .texto {
-    color: #55acee;
+    color: #696969;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.5rem;
+    text-align: justify;
 }
 .slider_info .informacion .subtitulo {
     color: #444;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.5rem;
     margin-bottom: 16px;
 }
 /* Botones slide info */
@@ -187,10 +209,34 @@ a {
 }
 .slider_sociales .github {
     background: #24292e;
+    transition: 500ms all ease-in;
 }
-.slider_sociales .facebook {
-    background: #3b5998;
+.slider_sociales .github:hover {
+    border: 1px solid #1d2125;
+    background: none;
+    color: #1d2125;
+    box-shadow: 1px 3px 4px rgba(0,0,0,.5);
 }
 .slider_sociales .twitter {
     background: #55acee;
+    transition: 500ms all ease-in;
+}
+.slider_sociales .twitter:hover {
+    border: 1px solid #448abe;
+    background: none;
+    color: #448abe;
+    box-shadow: 1px 3px 4px rgba(0,0,0,.5);
+}
+
+@media(max-width: 525px) {
+    .slider_info .informacion article .slide {
+        padding: 20px 35px;
+    }
+    .anterior {
+        left: 5px !important;
+    }
+    .siguiente {
+        right: 5px !important;
+    }
+    
 }
